@@ -1,0 +1,9 @@
+name: CI Test 
+on: [push]
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    -uses: actions/chechout@v4
+    -name: Run test
+      run: echo "CI running successfully!"
